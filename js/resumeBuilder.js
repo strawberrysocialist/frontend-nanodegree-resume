@@ -1,42 +1,3 @@
-//$("#main").append("John R. Partridge");
-
-//var awesomeThoughts = "I am John and I am AWESOME!"
-//console.log(awesomeThoughts);
-//var funThoughts = awesomeThoughts.replace("AWESOME", "FUN");
-//$("#main").append(funThoughts);
-
-//var name = "John R. Partridge";
-//var role ="Trade Compliance Guru";
-//var formattedName = HTMLheaderName.replace("%data%", name);
-//var formattedRole = HTMLheaderRole.replace("%data%", role);
-//$("#header").prepend(formattedRole);
-//$("#header").prepend(formattedName);
-
-//var audacity = "audacity";
-//var udacity = "U" + audacity.slice(2);
-//console.log(udacity);
-
-//var skills = ["aweseomeness", "programming", "teaching", "JS"];
-//$("#main").append(skills);
-//$("#main").append(skills[0]);
-//console.log(skills.length);
-//console.log(skills[skills.length-1]);
-
-//var nums = [1, 2, 3, 5];
-//nums[3] = nums[3] + 1;
-//$("#main").append(nums[3]);
-//console.log(nums.pop() + 1);
-//nums.push(nums.pop() + 1);
-//console.log(nums);
-
-//var name = "cAmEROn PittMAN";
-//var names = name.split(" ");
-//var firstName = names[0].toLowerCase();
-//firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
-//var lastName = names[1].toUpperCase();
-//var finalName = firstName + " " + lastName;
-//console.log(finalName);
-
 var bio = {
   "name" : "John R. Partridge",
   "role" : "Trade Compliance Guru",
@@ -128,10 +89,3 @@ var education = {
     }
   ]
 };
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#header").append(HTMLcontactGeneric.replace("%data%", bio.contactInfo));
-$("#header").append(work["position"]);
-$("#header").append(education.name);
