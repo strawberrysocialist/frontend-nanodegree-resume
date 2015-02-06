@@ -201,19 +201,6 @@ bio.display = function() {
   $("#topContacts").before(HTMLheaderName.replace("%data%", bio.name));
   $("#topContacts").before(HTMLheaderRole.replace("%data%", bio.role));
 
-  /*
-  var contactIDs = Object.getOwnPropertyNames(bio.contacts);
-  if (contactIDs.length > 0) {
-    for (var contactID in contactIDs) {
-      var contact = contactIDs[contactID];
-      console.log(contact + ": " + bio.contacts[contact]);
-      var fullContact = HTMLcontactGeneric;
-      fullContact = fullContact.replace("%contact%", contact);
-      fullContact = fullContact.replace("%data%", bio.contacts[contact]);
-      $("#topContacts").append(fullContact);
-    }
-  }
-  */
   bio.listContacts("#topContacts");
 
   $("#header").append(HTMLbioPic.replace("%data%", bio.bioPic));
@@ -266,19 +253,6 @@ education.display = function() {
 };
 var displayFooter = function() {
   $("#main").append(internationalizeButton);
-  /*
-  var contactIDs = Object.getOwnPropertyNames(bio.contacts);
-  if (contactIDs.length > 0) {
-    for (var contactID in contactIDs) {
-      var contact = contactIDs[contactID];
-      console.log(contact + ": " + bio.contacts[contact]);
-      var fullContact = HTMLcontactGeneric;
-      fullContact = fullContact.replace("%contact%", contact);
-      fullContact = fullContact.replace("%data%", bio.contacts[contact]);
-      $("#footerContacts").append(fullContact);
-    }
-  }
-  */
   bio.listContacts("#footerContacts");
 };
 var inName = function() {
